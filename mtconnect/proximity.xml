@@ -1,0 +1,26 @@
+<!-- ==========================================================
+ 
+       MTConnect Device file for MTCProximitySensor
+       (c) Rolf Wuthrich
+           2023 Concordia University
+
+     ========================================================== -->
+
+<MTConnectDevices>
+  <Devices>
+    <Device uuid="LJ12A3-4-Z-001" id="mtc_LJ12A3-4-Z_1" name="ESP8266-LJ12A3-4-Z-1">
+
+      <!-- General information -->
+      <Description>
+         Inductive Proximity Sensor LJ12A3-4-Z/BY
+      </Description>
+
+      <DataItems>
+        <DataItem category="EVENT" id="avail" type="AVAILABILITY"/>
+        <DataItem category="EVENT" id="firmeware" type="APPLICATION" subType="VERSION"/>
+        <DataItem category="EVENT" id="trigger" type="TRIGGER"/>
+      </DataItems>
+        
+    </Device>
+  </Devices>
+</MTConnectDevices>
