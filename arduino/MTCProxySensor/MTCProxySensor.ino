@@ -24,15 +24,23 @@
 //   <DataItem category="EVENT" id="trigger" type="TRIGGER"/>
 //
 //
-// Required boards / libraries :
+// Required boards (one of the following):
 //
 // - ESP8266 Arduino board
 //   https://arduino-esp8266.readthedocs.io/en/3.0.2/
+// - ESP32 Ardunio board 
+//   https://docs.espressif.com/projects/arduino-esp32/en/latest/index.html
 // 
 // Available via Sketch > Include Library > Manage Libraries:
 
 
+#ifdef ESP32
+#include <WiFi.h>
+#define LED_BUILTIN 2
+#elif defined(ESP8266)
 #include <ESP8266WiFi.h>
+#endif
+
 #include "secrets.h"
 
 
