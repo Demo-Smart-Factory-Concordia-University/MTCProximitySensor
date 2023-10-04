@@ -155,6 +155,7 @@ void loop() {
         Serial.println(client.remoteIP());
         Serial.println("|avail|AVAILABLE");
         client.println("|avail|AVAILABLE");
+        sendTriggerSHDR(digitalRead(TRIGGERPIN));
         connected = true;
       } else {    
         // the connection was not a TCP connection  
